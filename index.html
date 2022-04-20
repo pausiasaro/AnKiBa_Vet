@@ -4,20 +4,21 @@
     <script src="script.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
     <title>Veterinaria Cuki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
 <style>
-
 *{
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: sans-serif;
 }
 
 header{
-  position: relative;
+  position:relative;
   margin: 20px auto;
   width: 1000px;
   height: 120px;
-  background: aquamarine;
 }
 
 #logo{
@@ -26,6 +27,10 @@ header{
   left:30px;
   width:200px;
   height:60px;
+  font-family: 'Courgette', cursive;
+  font-size: 40px;
+  text-align:center;
+  line-height:60px;
 }
 
 .redes{
@@ -34,21 +39,27 @@ header{
   height:42px;
   border-radius:100%;
   background:black;
+  text-align:center;
+  line-height:42px;
+  color:white;
 }
 
 #icono1{
   top:42px;
   right:120px;
+  background:#3b5998;
 }
 
 #icono2{
   top:42px;
   right:71px;
+  background:#4dc247;
 }
 
 #icono3{
   top:42px;
   right:19px;
+  background:#1da1f2;
 }
 
 nav{
@@ -63,7 +74,12 @@ nav{
   width:329px;
   margin:0px 2px;
   height:48px;
-  background:lightpink;  
+  background:#F08080;
+  font-family: 'Courgette', cursive;
+  font-size:18px;
+  color:black;
+  text-align:center;
+  line-height:48px;
 }
 
 #bot{
@@ -78,7 +94,6 @@ section{
   margin: 20px auto;
   width: 1000px;
   height: 453px;
-  background: MediumVioletRed;
 }
 
 aside#izq{
@@ -87,7 +102,6 @@ aside#izq{
   top:0px;
   width:200px;
   height:453px;
-  background:green;
 }
 
 article{
@@ -96,7 +110,19 @@ article{
   top:0px;
   width:600px;
   height:453px;
-  background:blue;
+  background:#FFF8DC;
+}
+
+article p{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin:20px;
+  font-size:16px;
+  text-align:justify;
+}
+
+article p img{
+  float:left;
+  margin-right:20px;
 }
 
 aside#der{
@@ -105,7 +131,6 @@ aside#der{
   top:0px;
   width:200px;
   height:453px;
-  background:green;
 }
 
 #bot ul{
@@ -117,8 +142,19 @@ aside#der{
   float:left;
   width:326px;
   height:192px;
-  background:red;
   margin-right:10px;
+  text-align:center;
+}
+
+#bot ul li img{
+  border-radius:100%;
+  height:150px;
+}
+
+#bot ul li p{
+  font-size:14px;
+  margin:5px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 footer{
@@ -126,19 +162,21 @@ footer{
   margin: 20px auto;
   width: 1000px;
   height: 70px;
-  background: hotpink;
+  background: #F08080;
+  text-align:center;
+  line-height:70px;
+  color:black;
 }
 </style>
 
   </head>
   <body>
   <header>
-    <center><font size="7" font color=magenta>Veterinaria Cuki</font></center>
-    <div id="logo"><img src="https://i.pinimg.com/236x/b0/ef/03/b0ef03cb86b0a888bc40ef7fc4701150.jpg" alt="logotipo" width="200" height="171"></div>
+    <div id="logo">AnKiBa Vet</div>
 
-    <div id="icono1" class="redes"></div>
-    <div id="icono2" class="redes"></div>
-    <div id="icono3" class="redes"></div>
+    <div id="icono1" class="redes">F</div>
+    <div id="icono2" class="redes">w</div>
+    <div id="icono3" class="redes">T</div>
   </header>
 
   <nav>
@@ -149,25 +187,37 @@ footer{
     </ul>
   </nav> 
 
-  <section> 
-  <aside id="izq"></aside>
+  <div id="bot">
+  <ul>
+    <li>
+      <img src="https://centraldemascotas.com/www/rsc/img/consultorio-veterinario.jpg" alt="Consultorio" width="200" height="171">
+    <p>3 Consultorios de atención simultáneas para revisiones generales, diagnóstico y controles</p>
+    </li>
 
-  <article></article>
+    <li>
+      <img src="https://i2.wp.com/revista.weepec.com/wp-content/uploads/2019/04/veterinarian-examining-dog-veterinary-clinic-PDNSPQ2.jpg?resize=768%2C513&ssl=1" alt="Veterinario en consulta" width="200" height="171">
+      <p>Consultas y vacunación a domicilio, el mismo servicio con la comodidad de no trasladar a la mascota hacia nuestra clínica</p>
+  </li>
+
+    <li>
+      <img src="https://media.istockphoto.com/vectors/dog-and-cat-silhouette-with-electrocardiogram-vector-id529384979?s=612x612" alt="Electrocardiograma" width="200" height="171">
+      <p>Electrocardiograma, interconsultas con Médicos Veterinarios especialistas en Cardiología, servicio de odontología, limpieza de dientes por ultrasonido</p>
+  </li>
+  </ul>  
+</div>
+
+  <section> 
+     <aside id="izq"></aside>
+
+  <article>
+    <p> <img src="https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1-480x300.jpeg" alt="veterinaria" width="250"> En AnKiBa VET contamos con un equipo de trabajo altamente idóneo para atender a nuestros mejores amigos. Conjugamos las mejores instalaciones para la atención y el cuidado de sus mascotas, con los profesionales más capacitados en la asistencia veterinaria. La salud de nuestras mascotas es tan importante como la de cualquier integrante de la familia.
+  Atención las 24 hs., los 365 días del año </p>
+</article>
 
   <aside id="der"></aside>  
   </section>
-  
-<div id="bot">
-  <ul>
-    <li></li>
 
-    <li></li>
+<footer> &copy; Todos los derechos reservados</footer>
 
-    <li></li>
-  </ul>
-</div>
-
-<footer>
-</footer>
 </body>
 </html>
